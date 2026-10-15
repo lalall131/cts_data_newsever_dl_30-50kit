@@ -2,6 +2,35 @@
 
 Download and validate public nascent-RNA sequencing data for eight Kit categories.
 
+## SRA path recovery update — 2026-10-15
+
+The runnable Git sources include a fix for `Expected one SRA payload` when
+prefetch 3.4.1 writes an additional accession directory under `-O`.
+Both direct and nested `.sra`/`.sralite` files are recognized, existing files
+are validated before reuse, and fasterq-dump receives the actual accession
+directory. Ambiguous candidates remain a review error.
+
+After updating with `git pull --ff-only`, source your local tool environment
+if required, then run the recovery controller in the background:
+
+```bash
+source runtime/use_local_tools.sh   # if this server uses the local curl/pigz setup
+mkdir -p logs
+nohup python3 -u tools/restart_after_sra_path_fix.py \
+  > logs/sra_path_fix_restart.out 2>&1 < /dev/null &
+tail -n 30 logs/sra_path_fix_restart.out
+```
+
+It stops only this user's dispatcher for this exact package, allows its
+existing child transfers/conversions to finish, waits for the project lock,
+and starts one updated run. Data and `config/site.json` are retained. Watch
+for `WAIT_TRANSFER_FINISH` and then `RESTARTED`, which records the new PID/log.
+`runtime/sra_path_fix_restart.json` records completion and prevents a repeated
+invocation from restarting the same fixed version again.
+
+The original 2026-10-14 ZIP below is retained unchanged as a baseline and does
+not include this fix; use the updated Git sources for execution.
+
 - Full manifest: **278 sample/library records, 339 Runs**.
 - Added mouse batch: **76 records / 76 Runs / 120 original FASTQ.gz files, 560.856 GB**.
 - Default data root: `/srv/projects/CTS_Atlas/liuql/data`.

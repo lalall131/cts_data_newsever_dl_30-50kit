@@ -13,19 +13,24 @@ import prepare_layout as layout
 import run_download_merge as d
 
 FAKE=r'''#!/usr/bin/env python3
-import json,sys
+import json,sys,os
 from pathlib import Path
 name=Path(sys.argv[0]).name;args=sys.argv[1:]
 if '--version' in args:print(name+' 3.0.0 mock-test-only');raise SystemExit(0)
 if name=='prefetch':
     run=args[0];cache=Path(args[args.index('-O')+1]);cache.mkdir(parents=True,exist_ok=True)
     assert cache.name==run
+    if os.environ.get('MOCK_PREFETCH_NESTED')=='1':
+        cache=cache/run;cache.mkdir(parents=True,exist_ok=True)
+    if os.environ.get('MOCK_PREFETCH_CALLS'):
+        with Path(os.environ['MOCK_PREFETCH_CALLS']).open('a') as f:f.write(run+'\n')
     (cache/(run+'.sra')).write_text(json.dumps({'run':run}))
 elif name=='vdb-validate':
     p=Path(args[0]);json.loads(p.read_text());assert p.suffix=='.sra'
 elif name=='fasterq-dump':
     cache=Path(args[0]);assert cache.is_dir(),'fasterq must receive accession directory'
     run=cache.name;out=Path(args[args.index('--outdir')+1]);out.mkdir(parents=True,exist_ok=True)
+    assert (cache/(run+'.sra')).is_file(),'fasterq must receive the actual payload parent'
     assert args[args.index('--seq-defline')+1]=='@$ac.$si/$ri'
     paired=run not in ['SRR900001','SRR900007']
     suffixes=['_1','_2'] if paired else ['']

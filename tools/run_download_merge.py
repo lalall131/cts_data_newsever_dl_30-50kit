@@ -72,8 +72,19 @@ def withdraw_ready(root,reason):
             q=p.with_name(p.stem+'.invalidated_'+stamp()+'.json');os.replace(p,q)
             log('READY_WITHDRAWN',root,reason)
 def sra_payload(cache,run):
-    files=[p for p in [Path(cache)/(run+'.sra'),Path(cache)/(run+'.sralite')] if p.is_file() and p.stat().st_size]
-    if len(files)!=1:raise RuntimeError('Expected one SRA payload in '+str(cache))
+    # prefetch may append the accession to -O, even when -O already ends in it.
+    # Accept only the two known layouts and this exact accession, not an
+    # unrestricted recursive search which could select quarantined data.
+    cache=Path(cache)
+    files=[]
+    for directory in [cache,cache/run]:
+        for suffix in ['.sra','.sralite']:
+            p=directory/(run+suffix)
+            if p.is_file() and p.stat().st_size:
+                guarded(p,cache)
+                files.append(p)
+    if not files:raise FileNotFoundError('No SRA payload in '+str(cache))
+    if len(files)!=1:raise RuntimeError('Ambiguous SRA payloads: '+str([str(p) for p in files]))
     return files[0]
 
 def scan_fastq(path,run_id):
@@ -273,7 +284,11 @@ def process_run(plan,site,stage,conversion_slots):
                     state['download']={'status':'DOWNLOADING','attempt':attempt,'source_mode':'prefetch','started_at':now()}
                     save(state_path,state)
                     try:
-                        command([tool('prefetch'),run,'--max-size',str(site.get('prefetch_max_size','100G')),'-O',str(cache)],root/'logs/prefetch.log',run)
+                        try:
+                            payload=sra_payload(cache,run)
+                            log('SRA_CACHE_FOUND',run,payload)
+                        except FileNotFoundError:
+                            command([tool('prefetch'),run,'--max-size',str(site.get('prefetch_max_size','100G')),'-O',str(cache)],root/'logs/prefetch.log',run)
                         payload=sra_payload(cache,run);before=fp(payload)
                         try:command([tool('vdb-validate'),str(payload)],root/'logs/vdb_validate.log',run)
                         except RuntimeError:
@@ -289,6 +304,7 @@ def process_run(plan,site,stage,conversion_slots):
                         time.sleep(min(5*attempt,15))
                 if payload is None:raise RuntimeError(str(last))
             log('SRA_VALIDATED',run)
+            if state.pop('error',None) is not None:save(state_path,state)
             if stage=='download':return {'run_id':run,'status':'VALIDATED_SRA'}
             if plan['kit_id'] in ['SPI-PBLR','scFLUENT-seq SPI','scGRO-seq SR']:
                 state['input_preparation']={'status':'KIT_SPECIFIC_PREPARATION_REQUIRED','error':'FLNC/barcode/UMI preparation needs the dedicated adapter'}
@@ -303,7 +319,7 @@ def process_run(plan,site,stage,conversion_slots):
                 for p in [raw,scratch,candidate]:p.mkdir(parents=True,exist_ok=True)
                 state['validation']={'status':'CONVERTING','vdb_validate':True,'input_files':[]};save(state_path,state)
                 before=fp(payload)
-                command([tool('fasterq-dump'),str(cache),'--threads',str(site.get('conversion_threads',2)),
+                command([tool('fasterq-dump'),str(payload.parent),'--threads',str(site.get('conversion_threads',2)),
                          '--seq-defline','@$ac.$si/$ri','--qual-defline','+',
                          '--outdir',str(raw),'--temp',str(scratch)],root/'logs/fasterq_dump.log',run)
                 if fp(payload)!=before:raise RuntimeError('SRA changed during conversion')
