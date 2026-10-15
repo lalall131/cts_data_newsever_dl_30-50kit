@@ -4,3 +4,4 @@
 *.json text eol=lf
 *.tsv -text
 *.zip binary
+*.bundle binary

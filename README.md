@@ -31,6 +31,14 @@ invocation from restarting the same fixed version again.
 The original 2026-10-14 ZIP below is retained unchanged as a baseline and does
 not include this fix; use the updated Git sources for execution.
 
+If Git's network fetch stalls but ordinary HTTPS file downloads work,
+`updates/sra_path_fix_20261015.bundle` carries the same path-fix commit.
+Download that small file using raw.githubusercontent.com or GitHub's contents
+API, verify `updates/SHA256SUMS`, and run `git pull --ff-only /path/to/file.bundle main`.
+This is a local Git update after the file download; it does not contact a Git
+server, and it retains the same commit history and local site configuration.
+The bundle requires baseline commit `796e9c8` and updates to `a7ea4f3`.
+
 - Full manifest: **278 sample/library records, 339 Runs**.
 - Added mouse batch: **76 records / 76 Runs / 120 original FASTQ.gz files, 560.856 GB**.
 - Default data root: `/srv/projects/CTS_Atlas/liuql/data`.
