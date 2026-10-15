@@ -1,0 +1,573 @@
+{
+  "schema_version": "1.0",
+  "classification_source": "CTS-Atlas_课题内容总览_v0.1.md §3.3",
+  "species": {
+    "9606": {
+      "scientific_name": "Homo sapiens",
+      "aliases": [
+        "Homo_sapiens"
+      ],
+      "default_reference_id": null
+    },
+    "10090": {
+      "scientific_name": "Mus musculus",
+      "aliases": [
+        "Mus_musculus"
+      ],
+      "default_reference_id": null
+    }
+  },
+  "kits": {
+    "SPI-ISR": {
+      "directory_name": "SPI-ISR",
+      "enabled": false,
+      "version": null,
+      "entrypoint": null,
+      "adapter_config": null,
+      "container_image": null,
+      "allowed_platforms": [
+        "ILLUMINA",
+        "BGISEQ",
+        "DNBSEQ"
+      ],
+      "supported_presets": [],
+      "required_assets": {
+        "star_index": "directory",
+        "rrna_bt2": "bowtie2_prefix",
+        "intron_uniq": "intron_prefix",
+        "exon_bed": "file",
+        "genes_bed": "file",
+        "first_last_intron_bed": "file"
+      },
+      "registration_status": "NEW_SERVER_RUNTIME_UNREGISTERED",
+      "notes": [
+        "必须按实际Kit版本登记入口、适配配置、支持预设和参考资源要求；默认停用。",
+        "required_assets字段名称已对照旧服务器SPI-ISR_v4实际config.yaml；新版Kit若字段变化需相应修改适配器。"
+      ]
+    },
+    "SPI-MBSR": {
+      "directory_name": "SPI-MBSR",
+      "enabled": false,
+      "version": null,
+      "entrypoint": null,
+      "adapter_config": null,
+      "container_image": null,
+      "allowed_platforms": [
+        "ILLUMINA",
+        "BGISEQ",
+        "DNBSEQ"
+      ],
+      "supported_presets": [],
+      "required_assets": {},
+      "registration_status": "NEW_SERVER_RUNTIME_UNREGISTERED",
+      "notes": [
+        "必须按实际Kit版本登记入口、适配配置、支持预设和参考资源要求；默认停用。"
+      ]
+    },
+    "SPI-NPLR": {
+      "directory_name": "SPI-NPLR",
+      "enabled": false,
+      "version": null,
+      "entrypoint": null,
+      "adapter_config": null,
+      "container_image": null,
+      "allowed_platforms": [
+        "OXFORD_NANOPORE"
+      ],
+      "supported_presets": [],
+      "required_assets": {},
+      "registration_status": "NEW_SERVER_RUNTIME_UNREGISTERED",
+      "notes": [
+        "必须按实际Kit版本登记入口、适配配置、支持预设和参考资源要求；默认停用。"
+      ]
+    },
+    "SPI-PBLR": {
+      "directory_name": "SPI-PBLR",
+      "enabled": false,
+      "version": null,
+      "entrypoint": null,
+      "adapter_config": null,
+      "container_image": null,
+      "allowed_platforms": [
+        "PACBIO_SMRT"
+      ],
+      "supported_presets": [],
+      "required_assets": {},
+      "registration_status": "NEW_SERVER_RUNTIME_UNREGISTERED",
+      "notes": [
+        "必须按实际Kit版本登记入口、适配配置、支持预设和参考资源要求；默认停用。"
+      ]
+    },
+    "SR-ATSR": {
+      "directory_name": "SR-ATSR",
+      "enabled": false,
+      "version": null,
+      "entrypoint": null,
+      "adapter_config": null,
+      "container_image": null,
+      "allowed_platforms": [
+        "ILLUMINA",
+        "BGISEQ",
+        "DNBSEQ"
+      ],
+      "supported_presets": [],
+      "required_assets": {},
+      "registration_status": "NEW_SERVER_RUNTIME_UNREGISTERED",
+      "notes": [
+        "必须按实际Kit版本登记入口、适配配置、支持预设和参考资源要求；默认停用。"
+      ]
+    },
+    "SR-OPSR": {
+      "directory_name": "SR-OPSR",
+      "enabled": false,
+      "version": null,
+      "entrypoint": null,
+      "adapter_config": null,
+      "container_image": null,
+      "allowed_platforms": [
+        "ILLUMINA",
+        "BGISEQ",
+        "DNBSEQ"
+      ],
+      "supported_presets": [],
+      "required_assets": {},
+      "registration_status": "NEW_SERVER_RUNTIME_UNREGISTERED",
+      "notes": [
+        "必须按实际Kit版本登记入口、适配配置、支持预设和参考资源要求；默认停用。"
+      ]
+    },
+    "scFLUENT-seq SPI": {
+      "directory_name": "scFLUENT-seq-SPI",
+      "enabled": false,
+      "version": null,
+      "entrypoint": null,
+      "adapter_config": null,
+      "container_image": null,
+      "allowed_platforms": [
+        "ILLUMINA",
+        "BGISEQ",
+        "DNBSEQ"
+      ],
+      "supported_presets": [],
+      "required_assets": {},
+      "registration_status": "NEW_SERVER_RUNTIME_UNREGISTERED",
+      "notes": [
+        "必须按实际Kit版本登记入口、适配配置、支持预设和参考资源要求；默认停用。"
+      ]
+    },
+    "scGRO-seq SR": {
+      "directory_name": "scGRO-seq-SR",
+      "enabled": false,
+      "version": null,
+      "entrypoint": null,
+      "adapter_config": null,
+      "container_image": null,
+      "allowed_platforms": [
+        "ILLUMINA",
+        "BGISEQ",
+        "DNBSEQ"
+      ],
+      "supported_presets": [],
+      "required_assets": {},
+      "registration_status": "NEW_SERVER_RUNTIME_UNREGISTERED",
+      "notes": [
+        "必须按实际Kit版本登记入口、适配配置、支持预设和参考资源要求；默认停用。"
+      ]
+    }
+  },
+  "technology_routes": {
+    "chrRNA-seq": {
+      "directory_name": "chrRNA-seq",
+      "allowed_kits": [
+        "SPI-ISR"
+      ],
+      "presets": {
+        "SPI-ISR": "ISR_default"
+      },
+      "aliases": [
+        "ChrRNA",
+        "Chromatin RNA-seq",
+        "Chromatin RNA-Seq",
+        "Chromatin-associated RNA-seq",
+        "chromatin-fraction RNA sequencing",
+        "chromRNAseq",
+        "chromRNA-seq"
+      ]
+    },
+    "TT-seq": {
+      "directory_name": "TT-seq",
+      "allowed_kits": [
+        "SPI-ISR"
+      ],
+      "presets": {
+        "SPI-ISR": "ISR_default"
+      },
+      "aliases": []
+    },
+    "4sU-seq": {
+      "directory_name": "4sU-seq",
+      "allowed_kits": [
+        "SPI-ISR"
+      ],
+      "presets": {
+        "SPI-ISR": "ISR_default"
+      },
+      "aliases": [
+        "4sU -seq"
+      ]
+    },
+    "Bru-seq": {
+      "directory_name": "Bru-seq",
+      "allowed_kits": [
+        "SPI-ISR"
+      ],
+      "presets": {
+        "SPI-ISR": "ISR_default"
+      },
+      "aliases": [
+        "BrU-seq"
+      ]
+    },
+    "ChAR-seq": {
+      "directory_name": "ChAR-seq",
+      "allowed_kits": [
+        "SPI-ISR"
+      ],
+      "presets": {
+        "SPI-ISR": "ISR_default"
+      },
+      "aliases": []
+    },
+    "4sUDRB-seq": {
+      "directory_name": "4sUDRB-seq",
+      "allowed_kits": [
+        "SPI-ISR"
+      ],
+      "presets": {
+        "SPI-ISR": "ISR_default"
+      },
+      "aliases": []
+    },
+    "TTchem-seq": {
+      "directory_name": "TTchem-seq",
+      "allowed_kits": [
+        "SPI-ISR"
+      ],
+      "presets": {
+        "SPI-ISR": "ISR_default"
+      },
+      "aliases": [
+        "TT-chem-seq",
+        "TTchemseq"
+      ]
+    },
+    "BruUV-seq": {
+      "directory_name": "BruUV-seq",
+      "allowed_kits": [
+        "SPI-ISR"
+      ],
+      "presets": {
+        "SPI-ISR": "ISR_default"
+      },
+      "aliases": []
+    },
+    "DRB-TT-seq": {
+      "directory_name": "DRB-TT-seq",
+      "allowed_kits": [
+        "SPI-ISR"
+      ],
+      "presets": {
+        "SPI-ISR": "ISR_default"
+      },
+      "aliases": []
+    },
+    "EU-seq": {
+      "directory_name": "EU-seq",
+      "allowed_kits": [
+        "SPI-ISR"
+      ],
+      "presets": {
+        "SPI-ISR": "ISR_default"
+      },
+      "aliases": []
+    },
+    "SLAM-seq": {
+      "directory_name": "SLAM-seq",
+      "allowed_kits": [
+        "SPI-MBSR"
+      ],
+      "presets": {
+        "SPI-MBSR": "SLAM-seq"
+      },
+      "aliases": []
+    },
+    "TimeLapse-seq": {
+      "directory_name": "TimeLapse-seq",
+      "allowed_kits": [
+        "SPI-MBSR"
+      ],
+      "presets": {
+        "SPI-MBSR": "TimeLapse-seq"
+      },
+      "aliases": []
+    },
+    "SLAM-ITseq": {
+      "directory_name": "SLAM-ITseq",
+      "allowed_kits": [
+        "SPI-MBSR"
+      ],
+      "presets": {
+        "SPI-MBSR": "SLAM-ITseq"
+      },
+      "aliases": []
+    },
+    "TT-SLAMseq": {
+      "directory_name": "TT-SLAMseq",
+      "allowed_kits": [
+        "SPI-MBSR"
+      ],
+      "presets": {
+        "SPI-MBSR": "TT-SLAMseq"
+      },
+      "aliases": []
+    },
+    "nano-COP": {
+      "directory_name": "nano-COP",
+      "allowed_kits": [
+        "SPI-NPLR"
+      ],
+      "presets": {
+        "SPI-NPLR": "nano-COP"
+      },
+      "aliases": []
+    },
+    "POINT-nano": {
+      "directory_name": "POINT-nano",
+      "allowed_kits": [
+        "SPI-NPLR"
+      ],
+      "presets": {
+        "SPI-NPLR": "POINT-nano"
+      },
+      "aliases": []
+    },
+    "FLEP-seq": {
+      "directory_name": "FLEP-seq",
+      "allowed_kits": [
+        "SPI-NPLR",
+        "SPI-PBLR"
+      ],
+      "presets": {
+        "SPI-NPLR": "FLEP-seq_ONT",
+        "SPI-PBLR": "FLEP-seq_PacBio"
+      },
+      "aliases": []
+    },
+    "LRS": {
+      "directory_name": "LRS",
+      "allowed_kits": [
+        "SPI-PBLR"
+      ],
+      "presets": {
+        "SPI-PBLR": "PacBio_FLNC"
+      },
+      "aliases": []
+    },
+    "PRO-seq": {
+      "directory_name": "PRO-seq",
+      "allowed_kits": [
+        "SR-ATSR"
+      ],
+      "presets": {
+        "SR-ATSR": "PRO_family"
+      },
+      "aliases": []
+    },
+    "uPRO-seq": {
+      "directory_name": "uPRO-seq",
+      "allowed_kits": [
+        "SR-ATSR"
+      ],
+      "presets": {
+        "SR-ATSR": "PRO_family"
+      },
+      "aliases": []
+    },
+    "qPRO-seq": {
+      "directory_name": "qPRO-seq",
+      "allowed_kits": [
+        "SR-ATSR"
+      ],
+      "presets": {
+        "SR-ATSR": "PRO_family"
+      },
+      "aliases": []
+    },
+    "ChRO-seq": {
+      "directory_name": "ChRO-seq",
+      "allowed_kits": [
+        "SR-ATSR"
+      ],
+      "presets": {
+        "SR-ATSR": "PRO_family"
+      },
+      "aliases": []
+    },
+    "leChRO-seq": {
+      "directory_name": "leChRO-seq",
+      "allowed_kits": [
+        "SR-ATSR"
+      ],
+      "presets": {
+        "SR-ATSR": "PRO_family"
+      },
+      "aliases": []
+    },
+    "pChRO-seq": {
+      "directory_name": "pChRO-seq",
+      "allowed_kits": [
+        "SR-ATSR"
+      ],
+      "presets": {
+        "SR-ATSR": "PRO_family"
+      },
+      "aliases": []
+    },
+    "GRO-seq": {
+      "directory_name": "GRO-seq",
+      "allowed_kits": [
+        "SR-ATSR"
+      ],
+      "presets": {
+        "SR-ATSR": "GRO_family"
+      },
+      "aliases": []
+    },
+    "fastGRO-seq": {
+      "directory_name": "fastGRO-seq",
+      "allowed_kits": [
+        "SR-ATSR"
+      ],
+      "presets": {
+        "SR-ATSR": "GRO_family"
+      },
+      "aliases": []
+    },
+    "NET-seq": {
+      "directory_name": "NET-seq",
+      "allowed_kits": [
+        "SR-OPSR"
+      ],
+      "presets": {
+        "SR-OPSR": "NET_family"
+      },
+      "aliases": []
+    },
+    "nested NET-seq": {
+      "directory_name": "nested_NET-seq",
+      "allowed_kits": [
+        "SR-OPSR"
+      ],
+      "presets": {
+        "SR-OPSR": "NET_family"
+      },
+      "aliases": []
+    },
+    "SI-NET-seq": {
+      "directory_name": "SI-NET-seq",
+      "allowed_kits": [
+        "SR-OPSR"
+      ],
+      "presets": {
+        "SR-OPSR": "NET_family"
+      },
+      "aliases": []
+    },
+    "mNET-seq": {
+      "directory_name": "mNET-seq",
+      "allowed_kits": [
+        "SR-OPSR"
+      ],
+      "presets": {
+        "SR-OPSR": "POL2_recipe_requires_Kit_confirmation"
+      },
+      "aliases": []
+    },
+    "tNET-seq": {
+      "directory_name": "tNET-seq",
+      "allowed_kits": [
+        "SR-OPSR"
+      ],
+      "presets": {
+        "SR-OPSR": "POL2_recipe_requires_Kit_confirmation"
+      },
+      "aliases": []
+    },
+    "plaNET-seq": {
+      "directory_name": "plaNET-seq",
+      "allowed_kits": [
+        "SR-OPSR"
+      ],
+      "presets": {
+        "SR-OPSR": "POL2_recipe_requires_Kit_confirmation"
+      },
+      "aliases": []
+    },
+    "POINT-seq": {
+      "directory_name": "POINT-seq",
+      "allowed_kits": [
+        "SR-OPSR"
+      ],
+      "presets": {
+        "SR-OPSR": "POL2_recipe_requires_Kit_confirmation"
+      },
+      "aliases": []
+    },
+    "sPOINT-seq": {
+      "directory_name": "sPOINT-seq",
+      "allowed_kits": [
+        "SR-OPSR"
+      ],
+      "presets": {
+        "SR-OPSR": "POL2_recipe_requires_Kit_confirmation"
+      },
+      "aliases": []
+    },
+    "Direct Nascent RNA Sequencing": {
+      "directory_name": "Direct_Nascent_RNA_Sequencing",
+      "allowed_kits": [
+        "SR-OPSR"
+      ],
+      "presets": {
+        "SR-OPSR": "POL2_recipe_requires_Kit_confirmation"
+      },
+      "aliases": []
+    },
+    "scFLUENT-seq": {
+      "directory_name": "scFLUENT-seq",
+      "allowed_kits": [
+        "scFLUENT-seq SPI"
+      ],
+      "presets": {
+        "scFLUENT-seq SPI": "barcode17_UMI12"
+      },
+      "aliases": []
+    },
+    "scGRO-seq": {
+      "directory_name": "scGRO-seq",
+      "allowed_kits": [
+        "scGRO-seq SR"
+      ],
+      "presets": {
+        "scGRO-seq SR": "barcode10_UMI5"
+      },
+      "aliases": []
+    }
+  },
+  "notes": [
+    "technology_routes是候选流程/预设匹配；不等于重新完成样本Methods资格审查。",
+    "预设键是适配器接口名，必须映射到实际Kit支持的参数；程序不会把这些名称直接作为Snakemake参数执行。",
+    "序列几何、平台或物种冲突时暂停路由，不能从目录或标题猜测切换。",
+    "2026-10-14: special_input_profile/special_calculation_hold force the three added Kits to await specific input adapters even after reference/Kit registration."
+  ]
+}

@@ -1,0 +1,2287 @@
+{
+  "GSM1945954": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR2937013"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3861553": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR9216763"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4543874": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR11749630"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX28143255": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32861731"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX25413290": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR29918620",
+      "SRR29918621",
+      "SRR29918622",
+      "SRR29918623",
+      "SRR29918624",
+      "SRR29918625",
+      "SRR29918626",
+      "SRR29918627",
+      "SRR29918628"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM5669651": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR16813870"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9103343": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR34493477",
+      "SRR34493478",
+      "SRR34493479",
+      "SRR34493480"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM9232915": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR35356336"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8943679": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR33238040"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM1375524": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR1264169",
+      "SRR1264170",
+      "SRR1264171",
+      "SRR1264172",
+      "SRR1264173",
+      "SRR1264174",
+      "SRR1264175",
+      "SRR1264176",
+      "SRR1264177",
+      "SRR1264178",
+      "SRR1264179",
+      "SRR1264180",
+      "SRR1264181",
+      "SRR1264182",
+      "SRR1264183",
+      "SRR1264184",
+      "SRR1264185",
+      "SRR1264186",
+      "SRR1264187",
+      "SRR1264188",
+      "SRR1264189",
+      "SRR1264190",
+      "SRR1264191"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM5379394": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR14842780"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3861591": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR9216796"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM6198390": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR19409925"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5667240": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR16806690"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5032166": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR13510257"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8995509": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR33630143"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5680959": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR16864073"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9232914": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR35356335"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5669458": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR16813337"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9148393": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR34838247"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM7728779": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR25728990"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5935406": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR18248319"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX25377771": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR29881410"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5671599": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR16816215"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM6283344": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR19908303"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5437276": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR15102184"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9232913": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR35356334"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5670161": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR16815470"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX26449582": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR31065622"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8729783": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32000882"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM6751696": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR22378043"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX23232200": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR27563055",
+      "SRR27563056",
+      "SRR27563057"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM5669641": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR16813841"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM7048829": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR23498196"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX521211": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR1252005"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9232917": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR35356338"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM6783095": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR22521631"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM7761875": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR25918312"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3103145": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR7028517"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX14329191": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR18182227"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9382741": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR36530702"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5670028": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR16815079"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4730179": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12467477"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8943678": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR33238041"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9232925": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR35356324"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM1338764": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR1182340",
+      "SRR1182341"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM8258865": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR28971007"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX7276973": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR10597217"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4304331": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR11051077"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM6767162": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR22465211"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768985": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908372"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX27028167": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR31665361"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8804960": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32413383"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768921": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908437"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX27028162": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR31665366"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8804961": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32413382"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768922": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908436"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX27028165": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR31665363"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8804959": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32413384"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768923": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908435"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX27028168": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR31665360"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8804958": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32413385"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768981": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908376"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX27028166": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR31665362"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768982": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908375"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX27028163": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR31665365"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768966": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908391"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768938": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908419"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768988": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908369"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768984": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908373"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768965": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908392"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768937": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908420"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768962": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908395"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768939": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908418"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768942": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908415"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768941": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908416"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768959": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908398"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768987": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908370"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768961": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908396"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768963": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908394"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX32768919": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR37908439"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4663623": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12183703"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4826679": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12802910"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4073919": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10097606",
+      "SRR15529847"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM4826678": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12802909"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3731633": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR15529860",
+      "SRR8932661"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM4826681": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12802912"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4073920": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10097607",
+      "SRR15529848"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM4826677": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12802908"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3731632": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR15529859",
+      "SRR8932660"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM4826680": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12802911"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3498219": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR15529852",
+      "SRR8268943"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM4826683": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12802914"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4073918": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10097605",
+      "SRR15529846"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM4826682": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12802913"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3498218": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR8268942"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3498220": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR15529853",
+      "SRR8268944"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM3498221": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR15529854",
+      "SRR8268945"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM4073916": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10097603",
+      "SRR15529844"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM4073917": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10097604",
+      "SRR15529845"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM3731634": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR15529861",
+      "SRR8932662"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM3731635": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR15529862",
+      "SRR8932663"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "SRX19748151": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR23938780"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "ERX2171553": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "ERR2114689"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX4794719": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR7961065"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX22182104": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR26478190"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8383725": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR29703043"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX28130338": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32847868"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5852132": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR17841555"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5884987": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR17971072"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM2428726": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR5109940"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM6239050": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR19643021"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM7281154": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR24389153"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX11196937": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR14879794"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5852135": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR17841552"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX28130334": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32847872"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8428185": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR30035193"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM7956904": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR27139400"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5519063": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR15460337"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM6585589": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR21585391",
+      "SRR21585392"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "SRX22182106": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR26478188"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5852134": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR17841553"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX28130339": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32847867"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM6912028": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR22952936"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5840556": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR17786618"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "ERX4377207": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "ERR4436649",
+      "ERR4436650"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM5672434": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR16774254"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX11196938": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR14879795"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX28130336": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32847870"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8545349": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR30831775"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9180583": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR35005046",
+      "SRR35005047"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM5901215": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR18039282"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3309958": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR7616135"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX22182116": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR26478178"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX28130341": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32847865"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5420825": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR15052418"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM340902": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR014286",
+      "SRR014287"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "ERX9274888": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "ERR9725616"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4971148": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR13242137"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX22182118": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR26478176"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX28130335": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32847871"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3618124": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR8608051"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM2936618": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR6497155"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "ERX9412176": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "ERR9867207"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX4794713": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR7961059"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX22182117": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR26478177"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX28130337": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR32847869"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4141987": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10354609",
+      "SRR10354608"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM3271013": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR7519720"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8383726": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR29703042"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5519072": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR15460346"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX22182119": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR26478175"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM2927902": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR6456884"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9074066": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR34268727"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM1505441": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR1575923",
+      "SRR1575924",
+      "SRR1575925",
+      "SRR1575926",
+      "SRR1575927",
+      "SRR1575928",
+      "SRR1928223"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM4816661": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12766519"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM7782499": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR26062651"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX8148247": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR11580519"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4964192": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR13218698"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8014377": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR27533500"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9064755": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR34138971"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM6611712": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR21771647"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4816672": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12766530"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX8148245": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR11580517"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4964191": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR13218697"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM7782503": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR26062647"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5362220": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR14749824"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9074117": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR34267072"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5909508": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR18090642"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4816665": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12766523"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX8148246": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR11580518"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX5145546": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR8334028"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX8474605": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR11929116"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX16239221": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR20204452"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4816662": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12766520"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX8148243": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR11580515"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3173844": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR7254564"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX24349670": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR28785290"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3937248": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR9667929"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4816666": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12766524"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX8148242": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR11580514"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3395979": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR7879179"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9083457": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR34334504"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "CRX066328": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "CRR078784"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4816664": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12766522"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX8148244": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR11580516"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM6598948": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR21696073"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM8995517": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR33629998"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM1505442": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR1575929",
+      "SRR1575930",
+      "SRR1575931"
+    ],
+    "reason": "多Run需先核对重复提交/重测关系"
+  },
+  "GSM4816673": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12766531"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "SRX4159136": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR7254585"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM7782469": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR26062579"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM6611710": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR21771645"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4816663": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12766521"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM2817065": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR6179086"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM9074129": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR34274412"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM5909505": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR18090645"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4816671": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12766529"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM7761892": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR25917944"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4826655": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12802886"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM3937249": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR9667930"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4816674": {
+    "action": "SINGLE_RUN",
+    "approved": true,
+    "included_runs": [
+      "SRR12766532"
+    ],
+    "reason": "该候选文库只有一个Run"
+  },
+  "GSM4282742": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10960995"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282743": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10960996"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282744": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10960997"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282745": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10960998"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282746": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10960999"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282747": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10961000"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282748": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10961001"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282749": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10961002"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282750": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10961003"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282751": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10961004"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282752": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10961005"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282753": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10961006"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282754": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10961007"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM4282755": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR10961008"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM8554731": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR30885941"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM8554733": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR30885937"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM8554735": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR30885938"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM8554736": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR30885935"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM8554737": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR30885939"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM8554738": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR30885934"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM8554739": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR30885933"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM8554740": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR30885931"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM8554741": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR30885930"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM8554742": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR30885932"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM9001995": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR33674228"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM9001997": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR33674226"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750416": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872277"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750417": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872276"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750418": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872275"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750419": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872274"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750424": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872229"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750425": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872228"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750426": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872227"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750427": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872226"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750428": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872225"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750429": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872224"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750430": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872223"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750431": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872214"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750432": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872213"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750433": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872212"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750434": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872211"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750441": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872244"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750442": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872243"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750443": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872242"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750444": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872241"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750445": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872240"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750446": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872239"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750447": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872270"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750448": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872269"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750449": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872268"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750450": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872267"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750451": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872266"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750452": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872265"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750453": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872264"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750454": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872263"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750455": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872222"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750456": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872221"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750457": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872220"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750392": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872285"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750411": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872250"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750387": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872258"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750385": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872260"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750404": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872233"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750403": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872234"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750438": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872207"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750409": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872252"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750382": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872287"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750407": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872254"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750408": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872253"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750389": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872256"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750413": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872248"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750384": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872261"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750405": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872232"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750396": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872281"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750437": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872208"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  },
+  "GSM7750391": {
+    "action": "HOLD",
+    "approved": false,
+    "included_runs": [
+      "SRR25872286"
+    ],
+    "reason": "Special Kit needs FLNC or cell barcode/UMI adapter; downloading raw FASTQ is not final calculation readiness."
+  }
+}

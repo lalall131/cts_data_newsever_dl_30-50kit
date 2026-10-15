@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "defaults": {
+    "9606": null,
+    "10090": null
+  },
+  "bundles": {},
+  "registration_example": {
+    "reference_id": "replace_with_versioned_reference_id",
+    "tax_id": "9606",
+    "scientific_name": "Homo sapiens",
+    "assembly_accession": null,
+    "assembly_label": null,
+    "annotation_provider": null,
+    "annotation_release": null,
+    "validated": false,
+    "compatible_kits": [],
+    "assets": {},
+    "source_urls": [],
+    "checksums": {},
+    "validation_notes": "填写实际参考基因组/GTF版本以及该Kit使用的索引和BED；确认它们来源一致后才登记为validated。"
+  },
+  "notes": [
+    "尚未取得新服务器实际参考路径和Kit路径，故不预填旧服务器绝对路径或未经确认的参考版本。",
+    "defaults按tax_id固定指向明确版本的bundle，不自动挑选目录中最新文件。",
+    "参考bundle中的索引、BED与基因组/GTF必须登记版本、来源和核对结果。"
+  ]
+}

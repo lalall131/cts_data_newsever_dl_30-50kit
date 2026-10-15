@@ -1,0 +1,26 @@
+{
+  "package_version": "2026-10-14",
+  "kits_with_download_targets": 8,
+  "samples": 278,
+  "runs": 339,
+  "original_five_kit_samples": 202,
+  "original_five_kit_runs": 263,
+  "added_mouse_samples": 76,
+  "added_mouse_runs": 76,
+  "added_ENA_FASTQ_files": 120,
+  "added_ENA_FASTQ_bytes": 560855923216,
+  "source_root": "/srv/projects/CTS_Atlas/liuql/data",
+  "default_workers": 2,
+  "special_download_mode": "exact_ENA_FASTQ_size_MD5_gzip_format_validation",
+  "submits_calculation_jobs": false,
+  "auto_certifies_FLNC_or_cell_barcode_preparation": false,
+  "tests": [
+    "339 Run / 278 sample routing contract",
+    "SRA downloader/converter regression",
+    "Linux start.sh and toolkit bootstrap with mock tools",
+    "Exact ENA archive transfer/resume/header preservation with mock curl",
+    "Official digest mismatch/quarantine and prevention of false input readiness",
+    "Real Linux curl preflight --only-added selects 76 Runs without SRA Toolkit"
+  ],
+  "real_data_download_on_user_new_server_tested": false
+}

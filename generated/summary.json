@@ -1,0 +1,19 @@
+{
+  "prepared_at_utc": "2026-10-14T02:14:07.919396+00:00",
+  "runs": 339,
+  "libraries": 278,
+  "data_root": "/srv/projects/CTS_Atlas/liuql/data",
+  "run_route_status": {
+    "HELD": 339
+  },
+  "download_channels": {
+    "SRA_PREFETCH": 262,
+    "GSA_MANUAL_CHANNEL": 1,
+    "ENA_ARCHIVE_FASTQ": 76
+  },
+  "compute_unit": "library",
+  "unresolved_manifest_records": 0,
+  "run_manifest_sha256": "3aa85a4041dd335cc07e8d37b2bfa08aab9068764cba6fecae882149d97b46fc",
+  "directories_created": false,
+  "download_or_compute_started": false
+}

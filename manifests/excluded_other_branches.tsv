@@ -1,0 +1,7 @@
+﻿Kit	GSM	Run	title	reason	source_url
+scGRO-seq SR	GSM7750463	SRR25872206	mESCs_AGTuC_Exp125c_c02	Same-study inAGTuC/AGTuC comparison branch; not the single-cell scGRO batch	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7750463
+scGRO-seq SR	GSM7750462	SRR25872215	mESCs_AGTuC_Exp125c_c01	Same-study inAGTuC/AGTuC comparison branch; not the single-cell scGRO batch	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7750462
+scGRO-seq SR	GSM7750461	SRR25872216	mESCs_inAGTuC_Exp261_c16	Same-study inAGTuC/AGTuC comparison branch; not the single-cell scGRO batch	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7750461
+scGRO-seq SR	GSM7750460	SRR25872217	mESCs_inAGTuC_Exp234_c11	Same-study inAGTuC/AGTuC comparison branch; not the single-cell scGRO batch	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7750460
+scGRO-seq SR	GSM7750459	SRR25872218	mESCs_inAGTuC_Exp208_c14	Same-study inAGTuC/AGTuC comparison branch; not the single-cell scGRO batch	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7750459
+scGRO-seq SR	GSM7750458	SRR25872219	mESCs_inAGTuC_Exp208_c12	Same-study inAGTuC/AGTuC comparison branch; not the single-cell scGRO batch	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7750458

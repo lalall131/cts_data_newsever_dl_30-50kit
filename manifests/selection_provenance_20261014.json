@@ -1,0 +1,142 @@
+{
+  "source": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\administrator\\Desktop\\run_status_20261012\\全部Run_待计算_已计算_失败明细_20261012.xlsx",
+  "source_sheet": "待下载计算",
+  "source_sha256": "67b12b12bd67240a5e86705eea4eae203cf806c2bf8425932156990cf0461cb1",
+  "selection_seed": "20261014",
+  "existing_samples": 202,
+  "existing_runs": 263,
+  "added_samples": 76,
+  "added_runs": 76,
+  "total_samples": 278,
+  "total_runs": 339,
+  "added_kit_summary": [
+    {
+      "Kit": "SPI-PBLR",
+      "Species": "Mus musculus",
+      "原表GSM数": 14,
+      "技术分支符合候选数": 14,
+      "入选GSM样本数": 14,
+      "入选Run数": 14,
+      "ENA_FASTQ_GB": 0.831192333,
+      "ENA_FASTQ文件数": 14,
+      "GSE": "GSE144205",
+      "PAIRED": 0,
+      "SINGLE": 14,
+      "备注": "GSM测序记录数，不是细胞数或已确认独立生物学重复数；专用计算预处理尚未运行。"
+    },
+    {
+      "Kit": "scFLUENT-seq SPI",
+      "Species": "Mus musculus",
+      "原表GSM数": 12,
+      "技术分支符合候选数": 12,
+      "入选GSM样本数": 12,
+      "入选Run数": 12,
+      "ENA_FASTQ_GB": 548.058017293,
+      "ENA_FASTQ文件数": 24,
+      "GSE": "GSE278777",
+      "PAIRED": 12,
+      "SINGLE": 0,
+      "备注": "GSM测序记录数，不是细胞数或已确认独立生物学重复数；专用计算预处理尚未运行。"
+    },
+    {
+      "Kit": "scGRO-seq SR",
+      "Species": "Mus musculus",
+      "原表GSM数": 82,
+      "技术分支符合候选数": 76,
+      "入选GSM样本数": 50,
+      "入选Run数": 50,
+      "ENA_FASTQ_GB": 11.96671359,
+      "ENA_FASTQ文件数": 82,
+      "GSE": "GSE242176",
+      "PAIRED": 32,
+      "SINGLE": 18,
+      "备注": "GSM测序记录数，不是细胞数或已确认独立生物学重复数；专用计算预处理尚未运行。"
+    }
+  ],
+  "combined_kit_summary": [
+    {
+      "Kit": "SPI-ISR",
+      "样本文库数": 50,
+      "Run数": 86,
+      "Species": "Homo sapiens"
+    },
+    {
+      "Kit": "SPI-MBSR",
+      "样本文库数": 31,
+      "Run数": 31,
+      "Species": "Homo sapiens"
+    },
+    {
+      "Kit": "SPI-NPLR",
+      "样本文库数": 21,
+      "Run数": 33,
+      "Species": "Homo sapiens"
+    },
+    {
+      "Kit": "SPI-PBLR",
+      "样本文库数": 14,
+      "Run数": 14,
+      "Species": "Mus musculus"
+    },
+    {
+      "Kit": "SR-ATSR",
+      "样本文库数": 50,
+      "Run数": 55,
+      "Species": "Homo sapiens"
+    },
+    {
+      "Kit": "SR-OPSR",
+      "样本文库数": 50,
+      "Run数": 58,
+      "Species": "Homo sapiens"
+    },
+    {
+      "Kit": "scFLUENT-seq SPI",
+      "样本文库数": 12,
+      "Run数": 12,
+      "Species": "Mus musculus"
+    },
+    {
+      "Kit": "scGRO-seq SR",
+      "样本文库数": 50,
+      "Run数": 50,
+      "Species": "Mus musculus"
+    }
+  ],
+  "counting_unit": "Unique Source data ID/GSM sequencing records; no claim of independent cells or unique biological replicates",
+  "PBLR_same_condition_same_replicate_platform_pairs": [
+    [
+      "GSM4282742",
+      "GSM4282746"
+    ],
+    [
+      "GSM4282743",
+      "GSM4282747"
+    ],
+    [
+      "GSM4282744",
+      "GSM4282748"
+    ],
+    [
+      "GSM4282745",
+      "GSM4282749"
+    ]
+  ],
+  "PBLR_targeted_HBB_samples": [
+    "GSM4282750",
+    "GSM4282751",
+    "GSM4282752",
+    "GSM4282753",
+    "GSM4282754",
+    "GSM4282755"
+  ],
+  "scGRO_other_branch_samples": [
+    "GSM7750463",
+    "GSM7750462",
+    "GSM7750461",
+    "GSM7750460",
+    "GSM7750459",
+    "GSM7750458"
+  ],
+  "old_download_list_unchanged": true
+}

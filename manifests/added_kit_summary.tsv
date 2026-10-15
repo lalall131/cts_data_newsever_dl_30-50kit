@@ -1,0 +1,4 @@
+﻿Kit	Species	原表GSM数	技术分支符合候选数	入选GSM样本数	入选Run数	ENA_FASTQ_GB	ENA_FASTQ文件数	GSE	PAIRED	SINGLE	备注
+SPI-PBLR	Mus musculus	14	14	14	14	0.831192333	14	GSE144205	0	14	GSM测序记录数，不是细胞数或已确认独立生物学重复数；专用计算预处理尚未运行。
+scFLUENT-seq SPI	Mus musculus	12	12	12	12	548.058017293	24	GSE278777	12	0	GSM测序记录数，不是细胞数或已确认独立生物学重复数；专用计算预处理尚未运行。
+scGRO-seq SR	Mus musculus	82	76	50	50	11.96671359	82	GSE242176	32	18	GSM测序记录数，不是细胞数或已确认独立生物学重复数；专用计算预处理尚未运行。

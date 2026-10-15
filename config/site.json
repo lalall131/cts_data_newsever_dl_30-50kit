@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "project_root": "/srv/projects/CTS_Atlas/liuql",
+  "data_root": "/srv/projects/CTS_Atlas/liuql/data",
+  "compute_unit": "library",
+  "download_preference": "prefetch",
+  "prefetch_max_size": "100G",
+  "notes": [
+    "数据按Kit/技术/Run组织。",
+    "单Run文库自动准备输入；多Run默认等待确认重复/合并关系。",
+    "不启动计算Kit或Slurm任务。",
+    "Three added mouse Kits download exact ENA FASTQ; no header rewriting, barcode stripping or automatic FLNC certification."
+  ],
+  "download_workers": 2,
+  "conversion_workers": 1,
+  "conversion_threads": 2,
+  "compression_level": 1,
+  "download_attempts": 3,
+  "min_free_gb": 10
+}

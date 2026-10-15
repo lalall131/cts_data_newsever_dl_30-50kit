@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "run_id": "SRRxxxx",
+  "download": {
+    "status": "PLANNED",
+    "source_mode": null,
+    "started_at": null,
+    "finished_at": null,
+    "bytes": null,
+    "error": null
+  },
+  "validation": {
+    "status": "NOT_RUN",
+    "vdb_validate": null,
+    "official_MD5_for_ENA_file": null,
+    "gzip": null,
+    "FASTQ_format": null,
+    "input_files": [],
+    "read_roles": [],
+    "validated_input_fingerprints": []
+  },
+  "input_preparation": {
+    "status": "NOT_RUN",
+    "merge_manifest": null,
+    "tmp_bytes": null
+  },
+  "calculation": {
+    "status": "NOT_SUBMITTED",
+    "kit_version": null,
+    "reference_id": null,
+    "job_id": null,
+    "error": null
+  }
+}
