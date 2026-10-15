@@ -56,7 +56,8 @@ class ReviewTests(unittest.TestCase):
         self.mock=self.repo/'bin/vdb-dump'
         self.mock.write_text('#!'+sys.executable+'\nimport sys\n'
                              'assert "-R" not in sys.argv, "must check every spot"\n'
-                             'for _ in range(3):print("0, 100\\tSRA_READ_TYPE_TECHNICAL, SRA_READ_TYPE_BIOLOGICAL")\n')
+                             'for _ in range(2):print("0, 100\\tSRA_READ_TYPE_TECHNICAL, SRA_READ_TYPE_BIOLOGICAL")\n'
+                             'print("100, 0\\tSRA_READ_TYPE_BIOLOGICAL, SRA_READ_TYPE_TECHNICAL")\n')
         self.mock.chmod(0o755)
         d.save(self.repo/'runtime/runtime_bin.json',{'bin_dir':str(self.mock.parent)})
         self.old_root=d.ROOT
@@ -77,6 +78,8 @@ class ReviewTests(unittest.TestCase):
         ready=d.read(self.plan['paths']['ready'])
         self.assertEqual((ready['layout'],ready['declared_layout']),('SINGLE','PAIRED'))
         self.assertFalse(ready['calculation_submission_allowed'])
+        audit=d.read(Path(self.plan['paths']['stats'])/'read_layout_review.json')
+        self.assertEqual(audit['biological_read_positions'],{'1':1,'2':2})
         self.assertEqual(d.read(Path(self.libraries[0]['library_root'])/'library_ready.json')['layout'],'SINGLE')
         self.assertEqual(d.read(self.repo/'generated/run_results.json'),self.result)
         self.assertEqual(d.read(self.repo/'generated/run_plan.json')[0]['layout'],'PAIRED')
@@ -130,10 +133,21 @@ class ReviewTests(unittest.TestCase):
 class RowTests(unittest.TestCase):
     def test_counts_types_empty_and_unexpected_output(self):
         good='0, 100\tSRA_READ_TYPE_TECHNICAL, SRA_READ_TYPE_BIOLOGICAL\n'
-        result=review.scan_rows(io.StringIO(good*3),3)
+        reverse='100, 0\tSRA_READ_TYPE_BIOLOGICAL, SRA_READ_TYPE_TECHNICAL\n'
+        # Mirrors the reported late switch at spot 16,760,307: slot order
+        # changes, but every spot still contains exactly one biological read.
+        result=review.scan_rows(io.StringIO(good*2+reverse),3)
         self.assertEqual(result['all_spots_checked'],3)
-        for bad in ['',good,good+'100, 0\tSRA_READ_TYPE_BIOLOGICAL, SRA_READ_TYPE_TECHNICAL\n',
+        self.assertEqual(result['biological_read_positions'],{'1':1,'2':2})
+        self.assertEqual(review.scan_rows(io.StringIO(reverse*3),3)['biological_read_positions'],{'1':3})
+        for bad in ['',good,good+reverse,
                     good+'0, 100\tSRA_READ_TYPE_BIOLOGICAL, SRA_READ_TYPE_BIOLOGICAL\n',
+                    good*2+'100, 100\tSRA_READ_TYPE_BIOLOGICAL, SRA_READ_TYPE_BIOLOGICAL\n',
+                    good*2+'0, 0\tSRA_READ_TYPE_TECHNICAL, SRA_READ_TYPE_BIOLOGICAL\n',
+                    good*2+'100, 100\tSRA_READ_TYPE_TECHNICAL, SRA_READ_TYPE_BIOLOGICAL\n',
+                    good*2+'0, 100\tSRA_READ_TYPE_TECHNICAL, SRA_READ_TYPE_TECHNICAL\n',
+                    good*2+'100, -1\tSRA_READ_TYPE_BIOLOGICAL, SRA_READ_TYPE_TECHNICAL\n',
+                    good*2+'0, 100, 100\tSRA_READ_TYPE_TECHNICAL, SRA_READ_TYPE_BIOLOGICAL, SRA_READ_TYPE_BIOLOGICAL\n',
                     good+'invalid header\n']:
             with self.assertRaises(RuntimeError):review.scan_rows(io.StringIO(bad),3)
 

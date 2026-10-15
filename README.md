@@ -52,6 +52,13 @@ The first 20 inspected spots contain a zero-length TECHNICAL read followed by
 one 100 nt BIOLOGICAL read. This is evidence for a read-layout review, not a
 reason to redownload or to permit arbitrary orphaned paired-end inputs.
 
+The full audit subsequently found the reverse order at spot 16,760,307:
+`100, 0` with BIOLOGICAL then TECHNICAL. The corrected review checks read
+types and lengths together, allowing either slot order while still requiring
+exactly one nonempty biological read and one zero-length technical read.
+Its report counts the biological read's slot positions. The original review's
+fixed-slot assumption was too narrow; this failure did not indicate a bad FASTQ.
+
 After updating Git sources, run the targeted review in the background:
 
 ```bash

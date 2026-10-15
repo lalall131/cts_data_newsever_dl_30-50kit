@@ -22,6 +22,7 @@ def scan_rows(lines,expected_records):
     """Require exactly one nonempty biological and one empty technical read."""
     count=0
     patterns=Counter()
+    biological_positions=Counter()
     for raw in lines:
         line=raw.rstrip('\r\n')
         if not line:continue
@@ -32,15 +33,19 @@ def scan_rows(lines,expected_records):
         try:lengths=[int(x.strip()) for x in columns[0].split(',')]
         except ValueError:raise RuntimeError('Invalid READ_LEN at spot '+str(count))
         types=[x.strip() for x in columns[1].split(',')]
-        if (len(lengths)!=2 or lengths[0]!=0 or lengths[1]<=0
-            or types!=['SRA_READ_TYPE_TECHNICAL','SRA_READ_TYPE_BIOLOGICAL']):
+        biological=[i for i,t in enumerate(types) if t=='SRA_READ_TYPE_BIOLOGICAL']
+        technical=[i for i,t in enumerate(types) if t=='SRA_READ_TYPE_TECHNICAL']
+        if (len(lengths)!=2 or len(types)!=2 or len(biological)!=1 or len(technical)!=1
+            or lengths[biological[0]]<=0 or lengths[technical[0]]!=0):
             raise RuntimeError('Different read structure at spot '+str(count)+': '+line[:200])
         patterns[(lengths[0],lengths[1])]+=1
+        biological_positions[biological[0]+1]+=1
         if count%1000000==0:d.log('LAYOUT_REVIEW_PROGRESS',RUN,'spots='+str(count))
     if count!=expected_records or count<=0:
         raise RuntimeError('SRA spot count does not equal validated FASTQ records: '+str(count)+' / '+str(expected_records))
     return {'all_spots_checked':count,'single_biological_spots':count,
             'zero_length_technical_spots':count,'invalid_spots':0,
+            'biological_read_positions':{str(k):v for k,v in sorted(biological_positions.items())},
             'read_length_patterns':[{'lengths':list(k),'spots':v} for k,v in sorted(patterns.items())]}
 
 
