@@ -44,6 +44,47 @@ The bundle requires baseline commit `796e9c8` and updates to `a7ea4f3`.
 - Default data root: `/srv/projects/CTS_Atlas/liuql/data`.
 - This repository downloads/prepares inputs. It does **not** contain eight deployed calculation pipelines or submit SPI/SR jobs.
 
+## Reviewed singleton input: SRR19908303 (2026-10-15)
+
+This Run is declared PAIRED in the source plan but fasterq-dump reported
+33,520,612 spots, 33,520,612 zero-length reads and 33,520,612 written reads.
+The first 20 inspected spots contain a zero-length TECHNICAL read followed by
+one 100 nt BIOLOGICAL read. This is evidence for a read-layout review, not a
+reason to redownload or to permit arbitrary orphaned paired-end inputs.
+
+After updating Git sources, run the targeted review in the background:
+
+```bash
+mkdir -p logs
+nohup python3 -u tools/review_srr19908303_layout.py \
+  > logs/srr19908303_layout_review.out 2>&1 < /dev/null &
+tail -n 20 logs/srr19908303_layout_review.out
+```
+
+It reads READ_LEN and READ_TYPE for **every** SRA spot and requires precisely
+an empty technical read plus one nonempty biological read in every spot.
+The spot count must match the existing fully validated FASTQ record count,
+and the current compressed FASTQ SHA256 must still match the validation.
+If any gate fails, it leaves this Run held. No SRA download or FASTQ conversion
+is performed. The currently running dispatcher does not need a restart.
+
+Successful output uses SINGLE with `declared_layout=PAIRED`, retaining original
+manifests and an audit under this Run's `stats/read_layout_review.json`.
+`ready.json` and the single-Run `library_ready.json` are published, with
+calculation submission still disabled. Future dispatches reuse this review
+only while its exact source/FASTQ fingerprints and validation evidence match.
+Other paired-end inputs continue to require matching R1/R2.
+
+The running dispatcher owns `generated/run_results.json`, so the review does
+not rewrite its historical failed entry. Current repaired status is in the
+Run's `state.json`, ready manifests and `stats/read_layout_repair_result.json`.
+The next full dispatch can reconcile its own result summary.
+
+`updates/single_read_review_20261015.bundle` is an HTTPS-downloadable Git
+update for servers where Git network fetches stall. It requires commit
+`a7ea4f3` (the installed SRA path fix); verify `updates/SHA256SUMS` and pull
+the local bundle with `git pull --ff-only /path/to/file.bundle main`.
+
 ## Clone and download only the added three Kits
 
 Requires Linux, Python 3.9+ and curl. No Slurm or SRA Toolkit is needed for this added ENA-FASTQ batch.

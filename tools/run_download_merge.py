@@ -143,6 +143,38 @@ def input_roles(records,expected_layout):
         records[0]['role']='single';return records
     raise RuntimeError('NEEDS_READ_ROLE_REVIEW layout='+str(expected_layout)+' files='+str([r['role'] for r in records]))
 
+def reviewed_input_plan(plan,state,site):
+    """Apply only a complete, file-bound SRA single-biological-read review."""
+    path=Path(plan['paths']['stats'])/'read_layout_review.json'
+    if not path.exists():return plan
+    review=read(path)
+    records=reusable_fastq(state)
+    source=state.get('download',{})
+    if (review.get('status')!='VERIFIED_SINGLE_BIOLOGICAL_READ'
+        or review.get('run_id')!=plan['run_id'] or plan['layout']!='PAIRED'
+        or review.get('declared_layout')!='PAIRED' or review.get('effective_layout')!='SINGLE'
+        or not records or len(records)!=1 or records[0].get('role')!='single'
+        or source.get('status')!='VALIDATED_SRA' or not source.get('vdb_validate_pass')):
+        raise RuntimeError('READ_LAYOUT_REVIEW_INVALID; retain layout hold')
+    record=records[0]
+    expected={'path':record['path'],'fingerprint':record['fingerprint'],
+              'gzip_sha256':record.get('gzip_sha256'),'records':record['records']}
+    source_expected={'path':source['path'],'fingerprint':source['fingerprint']}
+    guarded(source['path'],Path(plan['paths']['run_root'])/'sra')
+    guarded(record['path'],Path(plan['paths']['run_root'])/'fastq')
+    if (review.get('fastq')!=expected or review.get('source')!=source_expected
+        or source['fingerprint']!=fp(source['path'])
+        or review.get('all_spots_checked')!=record['records']
+        or review.get('single_biological_spots')!=record['records']
+        or review.get('zero_length_technical_spots')!=record['records']
+        or review.get('invalid_spots')!=0 or not record.get('gzip_pass')
+        or not record.get('format_pass') or not record.get('stable')
+        or not record.get('gzip_sha256') or record['records']<=0):
+        raise RuntimeError('READ_LAYOUT_REVIEW_STALE_OR_INCOMPLETE; retain layout hold')
+    effective=dict(plan)
+    effective.update(layout='SINGLE',declared_layout='PAIRED',read_layout_review=str(path))
+    return effective
+
 def prepare_run(plan,records,state,site):
     root=Path(plan['paths']['run_root']);merged=Path(plan['paths']['merged'])
     files=[]
@@ -165,6 +197,8 @@ def prepare_run(plan,records,state,site):
            'prepared_at':now(),'input_files':files,'run_ids':[plan['run_id']],
            'comparison_to_ENA_gzip_MD5':'NOT_APPLICABLE',
            'calculation_submission_allowed':False}
+    if plan.get('read_layout_review'):
+        ready.update(declared_layout=plan['declared_layout'],read_layout_review=plan['read_layout_review'])
     save(root/'ready.json',ready)
     state['input_preparation']={'status':'RUN_INPUT_READY','merge_manifest':str(root/'ready.json'),'tmp_bytes':None}
     save(plan['paths']['state'],state)
@@ -309,6 +343,7 @@ def process_run(plan,site,stage,conversion_slots):
             if plan['kit_id'] in ['SPI-PBLR','scFLUENT-seq SPI','scGRO-seq SR']:
                 state['input_preparation']={'status':'KIT_SPECIFIC_PREPARATION_REQUIRED','error':'FLNC/barcode/UMI preparation needs the dedicated adapter'}
                 save(state_path,state);return {'run_id':run,'status':'KIT_SPECIFIC_PREPARATION_REQUIRED'}
+            plan=reviewed_input_plan(plan,state,site)
             cached=reusable_fastq(state)
             if cached:
                 records=input_roles(cached,plan['layout']);prepare_run(plan,records,state,site)
